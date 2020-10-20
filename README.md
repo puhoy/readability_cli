@@ -16,7 +16,11 @@ basically its just [readability-lxml](https://github.com/buriy/python-readabilit
 
     readcli SOMEURL
 
-from there, you could pipe the result through [pygments] and a pager, for example:
+from there, you could pipe the result through [pygments](https://github.com/pygments/pygments) and a pager, for example:
 
     readcli https://github.com/puhoy/lspace | pygmentize -l md | less -R
+
+or append website content to a file using vim:
+
+    :read !readcli https://some/url
 
