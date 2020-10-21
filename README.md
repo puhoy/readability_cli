@@ -2,7 +2,7 @@
 
 a really small thing to fetch webpages main content and print it as markdown
 
-basically its just [readability-lxml](https://github.com/buriy/python-readability) and [markdownify](https://github.com/matthewwithanm/python-markdownify) glued together
+basically its just [readability-lxml](https://github.com/buriy/python-readability) and [html2text](https://github.com/Alir3z4/html2text) glued together
 
 
 ## installation

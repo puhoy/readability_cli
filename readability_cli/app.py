@@ -1,5 +1,5 @@
 import click
-from markdownify import markdownify as md
+import html2text
 
 import requests
 from readability import Document
@@ -9,5 +9,5 @@ from readability import Document
 def cli(url):
     response = requests.get(url)
     doc = Document(response.text)
-    click.echo(md(doc.summary()))
+    click.echo(html2text.html2text(doc.summary()))
 
